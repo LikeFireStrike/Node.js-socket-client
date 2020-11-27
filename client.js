@@ -21,7 +21,7 @@ client.on('data', function(chunk) {
     console.log(`Data received from the server: ${chunk.toString()}.`);
     
     // Request an end to the connection after the data has been received.
-    //client.end();
+    client.end();
 });
 
 client.on('end', function() {
